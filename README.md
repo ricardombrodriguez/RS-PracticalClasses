@@ -19,7 +19,7 @@ Our final project, stored in the "projeto" folder, consisted of creating a virtu
 
 Final project grade: 19.55/20
 
-## Author
+## Authors
 
 - [Ricardo Rodriguez](https://github.com/ricardombrodriguez)
 - [João Bernardo Farias](https://github.com/bernas04)
