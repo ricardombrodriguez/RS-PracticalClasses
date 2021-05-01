@@ -1,0 +1,33 @@
+Jan 11 15:12:22.115 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 11 15:12:22.115 HYPERVISOR: Started on IP = localhost, TCP port = 50649.
+Jan 11 15:12:22.126 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 11 15:12:22.126 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/aula08/aula08/project-files/dynamips 
+Jan 11 15:12:22.126 GENERAL: working_dir=/home/ricardo/Documentos/RS/aula08/aula08/project-files/dynamips
+Jan 11 15:12:22.126 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/aula08/aula08/project-files/dynamips/27334faa-5531-42a1-8611-011104da3135 
+Jan 11 15:12:22.126 GENERAL: working_dir=/home/ricardo/Documentos/RS/aula08/aula08/project-files/dynamips/27334faa-5531-42a1-8611-011104da3135
+Jan 11 15:12:22.126 HYPERVISOR: exec_cmd: vm create R2 2 c3725 
+Jan 11 15:12:22.128 VM: VM R2 created.
+Jan 11 15:12:22.128 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5002 
+Jan 11 15:12:22.128 HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+Jan 11 15:12:22.128 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jan 11 15:12:22.129 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 11 15:12:22.129 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60a68e70 
+Jan 11 15:12:22.129 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 11 15:12:22.130 HYPERVISOR: exec_cmd: c3725 set_mac_addr R2 c202.2789.0000 
+Jan 11 15:12:22.130 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jan 11 15:12:22.130 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 11 15:12:22.130 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Jan 11 15:12:22.131 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 11 15:12:22.131 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 NM-4T 
+Jan 11 15:12:22.131 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5002 
+Jan 11 15:12:22.812 HYPERVISOR: exec_cmd: nio create_udp udp-a1e7bc5b-16e6-47f4-a1d3-583dcbdb431f 10012 127.0.0.1 10013 
+Jan 11 15:12:23.030 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-a1e7bc5b-16e6-47f4-a1d3-583dcbdb431f 
+Jan 11 15:12:23.031 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 11 15:12:23.135 HYPERVISOR: exec_cmd: nio create_udp udp-719855d2-faf6-4e38-9808-a1bd5f7e3647 10016 127.0.0.1 10017 
+Jan 11 15:12:23.138 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-719855d2-faf6-4e38-9808-a1bd5f7e3647 
+Jan 11 15:12:23.138 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 11 15:12:36.195 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jan 11 15:12:36.197 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/ricardo/Documentos/RS/aula08/aula08/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 11 15:12:36.197 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 11 15:12:36.199 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Jan 11 15:12:36.199 HYPERVISOR: exec_cmd: vm start R2 

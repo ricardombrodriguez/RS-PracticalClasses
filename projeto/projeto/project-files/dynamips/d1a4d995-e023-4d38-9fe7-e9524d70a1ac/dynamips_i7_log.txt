@@ -1,0 +1,26 @@
+Jan 04 10:41:03.579 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 04 10:41:03.579 HYPERVISOR: Started on IP = localhost, TCP port = 44603.
+Jan 04 10:41:03.590 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 04 10:41:03.590 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/projeto/projeto/project-files/dynamips 
+Jan 04 10:41:03.591 GENERAL: working_dir=/home/ricardo/Documentos/RS/projeto/projeto/project-files/dynamips
+Jan 04 10:41:03.591 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/projeto/projeto/project-files/dynamips/d4f2cd38-eec3-4685-9a58-8c5cf9b63b24 
+Jan 04 10:41:03.591 GENERAL: working_dir=/home/ricardo/Documentos/RS/projeto/projeto/project-files/dynamips/d4f2cd38-eec3-4685-9a58-8c5cf9b63b24
+Jan 04 10:41:03.591 HYPERVISOR: exec_cmd: vm create R2 5 c3725 
+Jan 04 10:41:03.591 VM: VM R2 created.
+Jan 04 10:41:03.592 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5006 
+Jan 04 10:41:03.592 HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+Jan 04 10:41:03.593 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jan 04 10:41:03.593 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 04 10:41:03.593 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60a68e70 
+Jan 04 10:41:03.594 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 04 10:41:03.594 HYPERVISOR: exec_cmd: c3725 set_mac_addr R2 c205.12d4.0000 
+Jan 04 10:41:03.595 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jan 04 10:41:03.595 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 04 10:41:03.596 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Jan 04 10:41:03.596 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 04 10:41:03.596 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 NM-4T 
+Jan 04 10:41:03.597 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 04 10:41:03.597 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 16 WIC-1T 
+Jan 04 10:41:03.597 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 04 10:41:03.597 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 32 WIC-2T 
+Jan 04 10:54:51.270 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 

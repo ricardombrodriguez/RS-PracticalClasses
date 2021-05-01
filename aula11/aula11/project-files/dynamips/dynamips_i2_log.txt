@@ -1,0 +1,53 @@
+Jan 07 16:25:06.613 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 07 16:25:06.613 HYPERVISOR: Started on IP = localhost, TCP port = 35125.
+Jan 07 16:25:06.624 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 07 16:25:06.624 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/aula11/aula11/project-files/dynamips 
+Jan 07 16:25:06.624 GENERAL: working_dir=/home/ricardo/Documentos/RS/aula11/aula11/project-files/dynamips
+Jan 07 16:25:06.625 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/aula11/aula11/project-files/dynamips/666e5cf8-f54c-4289-9921-b7f45de56acb 
+Jan 07 16:25:06.625 GENERAL: working_dir=/home/ricardo/Documentos/RS/aula11/aula11/project-files/dynamips/666e5cf8-f54c-4289-9921-b7f45de56acb
+Jan 07 16:25:06.626 HYPERVISOR: exec_cmd: vm create R2 2 c3725 
+Jan 07 16:25:06.626 VM: VM R2 created.
+Jan 07 16:25:06.627 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Jan 07 16:25:06.627 HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+Jan 07 16:25:06.628 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 07 16:25:06.629 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 07 16:25:06.629 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60a68e70 
+Jan 07 16:25:06.630 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jan 07 16:25:06.631 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jan 07 16:25:06.632 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 07 16:25:06.633 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Jan 07 16:25:06.634 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 07 16:25:06.634 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 NM-4T 
+Jan 07 16:25:06.748 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 07 16:25:10.044 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 07 16:25:12.133 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 07 16:25:24.977 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 07 16:26:22.978 HYPERVISOR: exec_cmd: nio create_udp udp-3d29527c-d47f-4c8e-be00-440f7b60241c 10008 127.0.0.1 10009 
+Jan 07 16:26:23.194 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-3d29527c-d47f-4c8e-be00-440f7b60241c 
+Jan 07 16:26:23.194 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 07 16:26:31.287 HYPERVISOR: exec_cmd: nio create_udp udp-2986bc1c-8bb5-49c9-aa0e-c062d8cf67e3 10012 127.0.0.1 10013 
+Jan 07 16:26:31.290 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-2986bc1c-8bb5-49c9-aa0e-c062d8cf67e3 
+Jan 07 16:26:31.290 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 07 16:26:58.997 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jan 07 16:26:58.997 VM: VM Ghost created.
+Jan 07 16:26:59.001 HYPERVISOR: exec_cmd: vm set_ios Ghost /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 07 16:26:59.003 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 07 16:26:59.004 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/ricardo/Documentos/RS/aula11/aula11/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 07 16:26:59.006 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 07 16:26:59.065 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jan 07 16:26:59.067 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 07 16:26:59.567 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 07 16:26:59.569 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 07 16:26:59.727 VM: VM Ghost shutdown.
+Jan 07 16:26:59.728 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 07 16:26:59.730 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 07 16:26:59.730 VM: VM Ghost destroyed.
+Jan 07 16:26:59.733 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jan 07 16:26:59.734 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/ricardo/Documentos/RS/aula11/aula11/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 07 16:26:59.735 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 07 16:26:59.736 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Jan 07 16:26:59.737 HYPERVISOR: exec_cmd: vm start R2 
+Jan 07 16:31:30.030 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jan 07 16:31:30.032 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jan 07 16:58:30.284 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jan 07 16:58:30.287 HYPERVISOR: exec_cmd: vm extract_config R2 

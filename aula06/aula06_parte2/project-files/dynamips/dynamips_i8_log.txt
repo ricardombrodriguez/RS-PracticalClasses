@@ -1,0 +1,51 @@
+Jan 01 18:49:18.308 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 01 18:49:18.308 HYPERVISOR: Started on IP = localhost, TCP port = 38855.
+Jan 01 18:49:18.321 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 01 18:49:18.321 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/aula06/aula06_parte2/project-files/dynamips 
+Jan 01 18:49:18.321 GENERAL: working_dir=/home/ricardo/Documentos/RS/aula06/aula06_parte2/project-files/dynamips
+Jan 01 18:49:18.322 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/aula06/aula06_parte2/project-files/dynamips/c2b9f06d-20ec-4b4e-becb-eac6bae11a59 
+Jan 01 18:49:18.322 GENERAL: working_dir=/home/ricardo/Documentos/RS/aula06/aula06_parte2/project-files/dynamips/c2b9f06d-20ec-4b4e-becb-eac6bae11a59
+Jan 01 18:49:18.322 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Jan 01 18:49:18.322 VM: VM R2 created.
+Jan 01 18:49:18.323 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5003 
+Jan 01 18:49:18.323 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Jan 01 18:49:18.323 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 01 18:49:18.323 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Jan 01 18:49:18.324 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jan 01 18:49:18.325 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 01 18:49:18.325 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.122a.0000 
+Jan 01 18:49:18.325 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Jan 01 18:49:18.326 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Jan 01 18:49:18.326 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 01 18:49:18.326 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-FE-TX 
+Jan 01 18:49:18.327 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 01 18:49:18.327 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 PA-2FE-TX 
+Jan 01 18:49:18.327 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5003 
+Jan 01 18:49:18.770 HYPERVISOR: exec_cmd: nio create_udp udp-4181ffce-2052-4b3d-97c7-70ff424b6519 10016 127.0.0.1 10017 
+Jan 01 18:49:18.986 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-4181ffce-2052-4b3d-97c7-70ff424b6519 
+Jan 01 18:49:18.987 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 01 18:49:19.043 HYPERVISOR: exec_cmd: nio create_udp udp-1177beb5-1e36-434f-8d9c-0852b413aec3 10020 127.0.0.1 10021 
+Jan 01 18:49:19.044 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-1177beb5-1e36-434f-8d9c-0852b413aec3 
+Jan 01 18:49:19.045 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 01 18:50:01.115 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jan 01 18:50:01.117 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/ricardo/Documentos/RS/aula06/aula06_parte2/project-files/dynamips/c7200-jk9o3s-mz.123-8.T.bin-512.ghost 
+Jan 01 18:50:01.118 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 01 18:50:01.120 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Jan 01 18:50:01.123 HYPERVISOR: exec_cmd: vm start R2 
+Jan 01 18:53:50.726 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 01 19:05:31.427 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jan 01 19:10:08.187 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 01 19:10:12.827 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 01 19:10:18.603 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 01 19:49:03.749 HYPERVISOR: exec_cmd: nio bind_filter udp-1177beb5-1e36-434f-8d9c-0852b413aec3 2 capture 
+Jan 01 19:49:03.751 HYPERVISOR: exec_cmd: nio setup_filter udp-1177beb5-1e36-434f-8d9c-0852b413aec3 2 en10mb /home/ricardo/Documentos/RS/aula06/aula06_parte2/project-files/captures/R2_FastEthernet10_to_R3_FastEthernet00.pcap 
+Jan 01 23:22:25.663 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 01 23:22:25.722 HYPERVISOR: exec_cmd: vm stop R2 
+Jan 01 23:22:25.827 VM: VM R2 shutdown.
+Jan 01 23:22:25.827 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jan 01 23:22:25.831 HYPERVISOR: exec_cmd: nio unbind_filter udp-1177beb5-1e36-434f-8d9c-0852b413aec3 2 
+Jan 01 23:22:25.961 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 01 23:22:25.961 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jan 01 23:22:25.963 HYPERVISOR: exec_cmd: vm delete R2 
+Jan 01 23:22:25.963 VM: VM R2 destroyed.
+Jan 01 23:22:25.964 HYPERVISOR: exec_cmd: hypervisor stop 

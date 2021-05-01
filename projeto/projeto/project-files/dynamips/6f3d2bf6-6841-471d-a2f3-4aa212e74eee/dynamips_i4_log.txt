@@ -1,0 +1,30 @@
+Jan 04 10:41:03.470 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 04 10:41:03.470 HYPERVISOR: Started on IP = localhost, TCP port = 43107.
+Jan 04 10:41:03.481 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 04 10:41:03.481 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/projeto/projeto/project-files/dynamips 
+Jan 04 10:41:03.481 GENERAL: working_dir=/home/ricardo/Documentos/RS/projeto/projeto/project-files/dynamips
+Jan 04 10:41:03.481 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/projeto/projeto/project-files/dynamips/6f3d2bf6-6841-471d-a2f3-4aa212e74eee 
+Jan 04 10:41:03.481 GENERAL: working_dir=/home/ricardo/Documentos/RS/projeto/projeto/project-files/dynamips/6f3d2bf6-6841-471d-a2f3-4aa212e74eee
+Jan 04 10:41:03.481 HYPERVISOR: exec_cmd: vm create SWL3_B 4 c3725 
+Jan 04 10:41:03.481 VM: VM SWL3_B created.
+Jan 04 10:41:03.481 HYPERVISOR: exec_cmd: vm set_con_tcp_port SWL3_B 5003 
+Jan 04 10:41:03.481 HYPERVISOR: exec_cmd: c3725 get_mac_addr SWL3_B 
+Jan 04 10:41:03.481 HYPERVISOR: exec_cmd: vm set_disk0 SWL3_B 1 
+Jan 04 10:41:03.482 HYPERVISOR: exec_cmd: vm set_ios SWL3_B /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 04 10:41:03.482 HYPERVISOR: exec_cmd: c3725 set_mac_addr SWL3_B c204.127e.0000 
+Jan 04 10:41:03.482 HYPERVISOR: exec_cmd: vm set_nvram SWL3_B 256 
+Jan 04 10:41:03.482 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+Jan 04 10:41:03.482 HYPERVISOR: exec_cmd: vm slot_add_binding SWL3_B 1 0 NM-16ESW 
+Jan 04 10:41:03.482 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+Jan 04 10:41:03.482 HYPERVISOR: exec_cmd: vm slot_add_binding SWL3_B 2 0 NM-1FE-TX 
+Jan 04 10:41:03.483 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+Jan 04 10:41:03.483 HYPERVISOR: exec_cmd: vm slot_add_binding SWL3_B 0 16 WIC-1T 
+Jan 04 10:41:03.483 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+Jan 04 10:41:03.483 HYPERVISOR: exec_cmd: vm slot_add_binding SWL3_B 0 32 WIC-2T 
+Jan 04 10:43:47.211 HYPERVISOR: exec_cmd: nio create_udp udp-a5ae8c26-387e-4160-b32d-3c625fd0decb 10020 127.0.0.1 10021 
+Jan 04 10:43:47.424 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3_B 0 0 udp-a5ae8c26-387e-4160-b32d-3c625fd0decb 
+Jan 04 10:43:47.424 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+Jan 04 10:46:05.096 HYPERVISOR: exec_cmd: vm set_ios SWL3_B /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 04 10:47:39.437 HYPERVISOR: exec_cmd: vm set_ios SWL3_B /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 04 10:48:16.103 HYPERVISOR: exec_cmd: vm set_ios SWL3_B /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 04 10:50:06.950 HYPERVISOR: exec_cmd: vm set_ios SWL3_B /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 

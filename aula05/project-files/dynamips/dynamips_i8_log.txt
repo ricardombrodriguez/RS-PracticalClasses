@@ -1,0 +1,59 @@
+Nov 23 21:18:46.949 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Nov 23 21:18:46.949 HYPERVISOR: Started on IP = localhost, TCP port = 47869.
+Nov 23 21:18:46.959 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 23 21:18:46.960 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/aula05/project-files/dynamips 
+Nov 23 21:18:46.960 GENERAL: working_dir=/home/ricardo/Documentos/RS/aula05/project-files/dynamips
+Nov 23 21:18:46.960 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/aula05/project-files/dynamips/5767e6df-5574-40c5-9c1d-c2fc35fe0929 
+Nov 23 21:18:46.960 GENERAL: working_dir=/home/ricardo/Documentos/RS/aula05/project-files/dynamips/5767e6df-5574-40c5-9c1d-c2fc35fe0929
+Nov 23 21:18:46.960 HYPERVISOR: exec_cmd: vm create ESW3 3 c3725 
+Nov 23 21:18:46.960 VM: VM ESW3 created.
+Nov 23 21:18:46.960 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW3 5009 
+Nov 23 21:18:46.960 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW3 
+Nov 23 21:18:46.960 HYPERVISOR: exec_cmd: vm set_disk0 ESW3 1 
+Nov 23 21:18:46.961 HYPERVISOR: exec_cmd: vm set_ios ESW3 /home/ricardo/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Nov 23 21:18:46.961 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW3 c203.165a.0000 
+Nov 23 21:18:46.961 HYPERVISOR: exec_cmd: vm set_nvram ESW3 256 
+Nov 23 21:18:46.961 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Nov 23 21:18:46.961 HYPERVISOR: exec_cmd: vm slot_add_binding ESW3 1 0 NM-16ESW 
+Nov 23 21:18:46.961 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Nov 23 21:18:46.961 HYPERVISOR: exec_cmd: vm slot_add_binding ESW3 2 0 NM-1FE-TX 
+Nov 23 21:18:46.962 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW3 5009 
+Nov 23 21:18:47.446 HYPERVISOR: exec_cmd: nio create_udp udp-1b2afee1-5499-4a28-992a-565bf170e5b0 10044 127.0.0.1 10045 
+Nov 23 21:18:47.654 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW3 1 2 udp-1b2afee1-5499-4a28-992a-565bf170e5b0 
+Nov 23 21:18:47.654 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Nov 23 21:18:47.679 HYPERVISOR: exec_cmd: nio create_udp udp-5f19e1ed-e8cd-443e-90fe-7e0e1aca84f2 10048 127.0.0.1 10049 
+Nov 23 21:18:47.680 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW3 1 1 udp-5f19e1ed-e8cd-443e-90fe-7e0e1aca84f2 
+Nov 23 21:18:47.680 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Nov 23 21:19:11.955 HYPERVISOR: exec_cmd: vm set_ghost_status ESW3 2 
+Nov 23 21:19:11.957 HYPERVISOR: exec_cmd: vm set_ghost_file ESW3 /home/ricardo/Documentos/RS/aula05/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Nov 23 21:19:11.958 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Nov 23 21:19:11.964 HYPERVISOR: exec_cmd: vm set_config ESW3 configs/i3_startup-config.cfg 
+Nov 23 21:19:11.965 HYPERVISOR: exec_cmd: vm start ESW3 
+Nov 23 23:52:22.769 HYPERVISOR: exec_cmd: nio bind_filter udp-5f19e1ed-e8cd-443e-90fe-7e0e1aca84f2 2 capture 
+Nov 23 23:52:22.826 HYPERVISOR: exec_cmd: nio setup_filter udp-5f19e1ed-e8cd-443e-90fe-7e0e1aca84f2 2 en10mb /home/ricardo/Documentos/RS/aula05/project-files/captures/ESW3_FastEthernet11_to_ESW1_FastEthernet11.pcap 
+Nov 24 00:00:10.495 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Nov 24 00:00:10.496 HYPERVISOR: exec_cmd: vm stop ESW3 
+Nov 24 00:00:10.601 VM: VM ESW3 shutdown.
+Nov 24 00:00:10.602 HYPERVISOR: exec_cmd: vm extract_config ESW3 
+Nov 24 00:00:10.645 HYPERVISOR: exec_cmd: nio unbind_filter udp-5f19e1ed-e8cd-443e-90fe-7e0e1aca84f2 2 
+Nov 24 00:11:23.108 HYPERVISOR: exec_cmd: vm set_ghost_status ESW3 2 
+Nov 24 00:11:23.110 HYPERVISOR: exec_cmd: vm set_ghost_file ESW3 /home/ricardo/Documentos/RS/aula05/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Nov 24 00:11:23.111 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Nov 24 00:11:23.112 HYPERVISOR: exec_cmd: vm set_config ESW3 configs/i3_startup-config.cfg 
+Nov 24 00:11:23.113 HYPERVISOR: exec_cmd: vm start ESW3 
+Nov 24 00:11:43.212 HYPERVISOR: exec_cmd: nio bind_filter udp-5f19e1ed-e8cd-443e-90fe-7e0e1aca84f2 2 capture 
+Nov 24 00:11:43.212 HYPERVISOR: exec_cmd: nio setup_filter udp-5f19e1ed-e8cd-443e-90fe-7e0e1aca84f2 2 en10mb /home/ricardo/Documentos/RS/aula05/project-files/captures/ESW3_FastEthernet11_to_ESW1_FastEthernet11.pcap 
+Nov 24 00:15:07.776 HYPERVISOR: exec_cmd: nio unbind_filter udp-5f19e1ed-e8cd-443e-90fe-7e0e1aca84f2 2 
+Nov 24 00:17:48.135 HYPERVISOR: exec_cmd: nio bind_filter udp-5f19e1ed-e8cd-443e-90fe-7e0e1aca84f2 2 capture 
+Nov 24 00:17:48.135 HYPERVISOR: exec_cmd: nio setup_filter udp-5f19e1ed-e8cd-443e-90fe-7e0e1aca84f2 2 en10mb /home/ricardo/Documentos/RS/aula05/project-files/captures/ESW3_FastEthernet11_to_ESW1_FastEthernet11.pcap 
+Nov 24 00:19:07.229 HYPERVISOR: exec_cmd: vm set_ios ESW3 /home/ricardo/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Nov 24 00:19:11.543 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Nov 24 00:19:11.544 HYPERVISOR: exec_cmd: vm stop ESW3 
+Nov 24 00:19:11.630 VM: VM ESW3 shutdown.
+Nov 24 00:19:11.631 HYPERVISOR: exec_cmd: vm extract_config ESW3 
+Nov 24 00:19:11.637 HYPERVISOR: exec_cmd: nio unbind_filter udp-5f19e1ed-e8cd-443e-90fe-7e0e1aca84f2 2 
+Nov 24 00:23:01.798 HYPERVISOR: exec_cmd: vm set_ghost_status ESW3 2 
+Nov 24 00:23:01.798 HYPERVISOR: exec_cmd: vm set_ghost_file ESW3 /home/ricardo/Documentos/RS/aula05/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Nov 24 00:23:01.799 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Nov 24 00:23:01.799 HYPERVISOR: exec_cmd: vm set_config ESW3 configs/i3_startup-config.cfg 
+Nov 24 00:23:01.799 HYPERVISOR: exec_cmd: vm start ESW3 

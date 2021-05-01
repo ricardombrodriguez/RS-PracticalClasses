@@ -1,0 +1,70 @@
+Jan 10 22:15:17.047 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 10 22:15:17.047 HYPERVISOR: Started on IP = localhost, TCP port = 36177.
+Jan 10 22:15:17.059 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 10 22:15:17.059 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/aula08/aula08/project-files/dynamips 
+Jan 10 22:15:17.059 GENERAL: working_dir=/home/ricardo/Documentos/RS/aula08/aula08/project-files/dynamips
+Jan 10 22:15:17.059 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/aula08/aula08/project-files/dynamips/38de13d6-1d77-4dd9-8f35-1b05210f3e1d 
+Jan 10 22:15:17.059 GENERAL: working_dir=/home/ricardo/Documentos/RS/aula08/aula08/project-files/dynamips/38de13d6-1d77-4dd9-8f35-1b05210f3e1d
+Jan 10 22:15:17.059 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Jan 10 22:15:17.060 VM: VM R3 created.
+Jan 10 22:15:17.060 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Jan 10 22:15:17.060 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Jan 10 22:15:17.060 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:15:17.061 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Jan 10 22:15:17.062 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 10 22:15:17.062 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Jan 10 22:15:17.062 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Jan 10 22:15:17.063 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Jan 10 22:15:17.063 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:15:17.064 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-FE-TX 
+Jan 10 22:15:17.064 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:15:17.064 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 PA-FE-TX 
+Jan 10 22:15:17.065 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:15:17.065 HYPERVISOR: exec_cmd: vm slot_add_binding R3 3 0 PA-2FE-TX 
+Jan 10 22:15:17.099 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 10 22:15:25.675 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 10 22:15:28.255 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 10 22:16:18.016 HYPERVISOR: exec_cmd: nio create_udp udp-fd5cf9b6-ba2b-47b7-b51f-234987fff518 10018 127.0.0.1 10019 
+Jan 10 22:16:18.225 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-fd5cf9b6-ba2b-47b7-b51f-234987fff518 
+Jan 10 22:16:18.226 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:16:22.862 HYPERVISOR: exec_cmd: nio create_udp udp-88bec80c-dc5b-4db7-897f-46be20ca8b8b 10022 127.0.0.1 10023 
+Jan 10 22:16:22.864 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-88bec80c-dc5b-4db7-897f-46be20ca8b8b 
+Jan 10 22:16:22.864 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:16:28.885 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 10 22:16:42.173 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 10 22:17:29.165 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Jan 10 22:17:29.166 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/ricardo/Documentos/RS/aula08/aula08/project-files/dynamips/c7200-jk9o3s-mz.123-8.T.bin-512.ghost 
+Jan 10 22:17:29.167 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:17:29.168 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Jan 10 22:17:29.169 HYPERVISOR: exec_cmd: vm start R3 
+Jan 10 22:17:59.413 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jan 10 22:21:51.136 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 10 22:21:53.981 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 10 22:25:39.737 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:25:39.738 HYPERVISOR: exec_cmd: vm slot_disable_nio R3 0 0 
+Jan 10 22:25:39.756 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 0 
+Jan 10 22:25:39.756 HYPERVISOR: exec_cmd: nio delete udp-fd5cf9b6-ba2b-47b7-b51f-234987fff518 
+Jan 10 22:25:51.958 HYPERVISOR: exec_cmd: nio create_udp udp-29abaa9d-ed71-49a5-8fb4-558d1360979e 10018 127.0.0.1 10019 
+Jan 10 22:25:51.958 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-29abaa9d-ed71-49a5-8fb4-558d1360979e 
+Jan 10 22:25:51.959 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:25:51.959 HYPERVISOR: exec_cmd: vm slot_enable_nio R3 0 0 
+Jan 10 22:25:57.607 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Jan 10 22:25:57.608 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/ricardo/Documentos/RS/aula08/aula08/project-files/dynamips/c7200-jk9o3s-mz.123-8.T.bin-512.ghost 
+Jan 10 22:25:57.608 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:34:16.813 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:34:16.870 HYPERVISOR: exec_cmd: vm slot_disable_nio R3 1 0 
+Jan 10 22:34:16.885 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 1 0 
+Jan 10 22:34:16.885 HYPERVISOR: exec_cmd: nio delete udp-88bec80c-dc5b-4db7-897f-46be20ca8b8b 
+Jan 10 22:34:16.933 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:34:16.933 HYPERVISOR: exec_cmd: vm slot_disable_nio R3 0 0 
+Jan 10 22:34:16.945 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 0 
+Jan 10 22:34:16.946 HYPERVISOR: exec_cmd: nio delete udp-29abaa9d-ed71-49a5-8fb4-558d1360979e 
+Jan 10 22:34:17.160 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 10 22:34:17.160 HYPERVISOR: exec_cmd: vm stop R3 
+Jan 10 22:34:17.218 VM: VM R3 shutdown.
+Jan 10 22:34:17.219 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jan 10 22:34:17.219 HYPERVISOR: exec_cmd: vm delete R3 
+Jan 10 22:34:17.219 VM: VM R3 destroyed.
+Jan 10 22:34:17.220 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 10 22:34:17.677 HYPERVISOR: Stopped.
+Jan 10 22:34:17.677 GENERAL: reset done.

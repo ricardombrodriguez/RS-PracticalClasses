@@ -1,0 +1,20 @@
+Nov 25 19:35:11.209 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Nov 25 19:35:11.209 HYPERVISOR: Started on IP = localhost, TCP port = 37165.
+Nov 25 19:35:11.212 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 25 19:35:11.213 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ricardo/Documentos/RS/aula04/project-files/dynamips 
+Nov 25 19:35:11.213 GENERAL: working_dir=/home/ricardo/Documentos/RS/aula04/project-files/dynamips
+Nov 25 19:35:11.213 HYPERVISOR: exec_cmd: ethsw create Switch1 
+Nov 25 19:35:11.455 HYPERVISOR: exec_cmd: nio create_udp udp-4f635a55-ec90-499b-a0f7-c8504d248448 10012 127.0.0.1 10013 
+Nov 25 19:35:11.455 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-4f635a55-ec90-499b-a0f7-c8504d248448 
+Nov 25 19:35:11.456 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-4f635a55-ec90-499b-a0f7-c8504d248448 1 
+Nov 25 19:35:11.489 HYPERVISOR: exec_cmd: nio create_udp udp-06f2e7cc-39db-4806-9b83-fbf052e524d8 10014 127.0.0.1 10015 
+Nov 25 19:35:11.489 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-06f2e7cc-39db-4806-9b83-fbf052e524d8 
+Nov 25 19:35:11.497 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-06f2e7cc-39db-4806-9b83-fbf052e524d8 2 
+Nov 25 19:35:11.536 HYPERVISOR: exec_cmd: nio create_udp udp-ed5d3739-182c-458c-94f5-71a5956ce51b 10016 127.0.0.1 10017 
+Nov 25 19:35:11.536 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-ed5d3739-182c-458c-94f5-71a5956ce51b 
+Nov 25 19:35:11.537 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-ed5d3739-182c-458c-94f5-71a5956ce51b 3 
+Nov 25 19:35:11.741 HYPERVISOR: exec_cmd: nio create_udp udp-68432cdf-d037-4bbe-b9e0-33964e00454b 10024 127.0.0.1 10025 
+Nov 25 19:35:11.742 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-68432cdf-d037-4bbe-b9e0-33964e00454b 
+Nov 25 19:35:11.759 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Switch1 udp-68432cdf-d037-4bbe-b9e0-33964e00454b 1 
+Nov 25 19:35:27.639 HYPERVISOR: exec_cmd: nio bind_filter udp-4f635a55-ec90-499b-a0f7-c8504d248448 2 capture 
+Nov 25 19:35:27.640 HYPERVISOR: exec_cmd: nio setup_filter udp-4f635a55-ec90-499b-a0f7-c8504d248448 2 en10mb /home/ricardo/Documentos/RS/aula04/project-files/captures/Switch1_Ethernet1_to_PC1_Ethernet0.pcap 
